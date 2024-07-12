@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Playground</title>
+    <style>
+        #Title {
+            margin: auto;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1 id="Title">This is a place for testing my Javascript Skills</h2>
+
+    <h2>Color Change </h2>
+    <p id="text_1">Change the color of this text to red or blue by clicking two separate buttons.</p>
+
+    <button onclick="document.getElementById('text_1').style.color = 'red'">Red</button>
+
+    <button onclick="document.getElementById('text_1').style.color = 'blue'">Blue</button>
+
+
+
+    <p id="new">Jalyn</p>
+
+    <button onclick="document.getElementById('new').innerHTML = 'Eben Apolinario'">Change Jalyn to Eben Apolinario</button>
+
+    <button onclick="document.getElementById('new').innerHTML = 'Jalyn'">Change Eben Apolinario to Jalyn</button>
+
+    <button onclick="document.getElementById('new').style.background = 'blue'">Change Background Color to Blue</button>
+
+    <button onclick="document.getElementById('new').style.background = 'yellow'">Change background color to yellow</button>
+
+
+    <p id="name">"NAME WILL BE HERE"</p>
+
+    <button onclick="showname(firstname,lastname)">SHOW EXISTING NAME</button>
+
+    <button onclick="removename()">Remove EXISTING NAME</button>
+
+    <p>Objects: </p>
+
+    <p id="cars">Name: {carname} Brand: {brandname} Year: {Year}</p> -->
+
+    <h1>Create an Event Listener with an Alert</h1>
+
+    <button id="btn">Event Listerner Button</button>
+
+
+    <h1>Create an Event Listener that tells you how many times you have clicked the button.</h1>
+
+    <button id="btn_2">How many times have i click this? </button>
+
+    <h1></h1>
+
+    <button onclick="displayDate()">Try</button>
+
+    <h2></h2>
+    <script>
+
+        let button = document.getElementById('btn');
+        button.addEventListener("click", function() {
+            alert("Button was clicked.");
+        } );
+
+
+        let click = 1;     
+
+        let button_2 = document.getElementById('btn_2');
+        button_2.addEventListener("click", function() {
+            
+            alert("Button was clicked " + click + " times");
+            click = click + 1;
+        } );
+
+
+
+
+
+
+
+
+        // myForm = 'Validate'
+        // fname = 'Josh'
+
+
+        // function validateForm() {
+        // let x = document.forms["myForm"]["fname"].value;
+        // if (x == "") {
+        //     alert("Name must be filled out");
+        //     return false;
+        //     }
+        // }
+
+
+
+
+
+
+        // let firstname = 'Josh Vrylle';
+        // let lastname = 'Castillo'
+
+        // function showname(firstname_,lastname_) {
+        //     document.getElementById('name').innerHTML = firstname_ +' '+ lastname_;
+        // }
+
+        // function removename() {
+        //     document.getElementById('name').innerHTML = '';
+        // }
+
+        // let car_1 = {Name: "Altis", Brand: "Toyota", Year: "1990"}
+
+        // document.write(car_1.Name,car_1.Brand,)
+
+    </script>
+
+</body>
+</html>
